@@ -7,19 +7,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <a href="#main">Skip to main content</a>
+  <a href="#main" class="skip-link">
+    Skip to main content
+</a>
     <header>
         <h1 id="greeting"></h1>
         <nav>
-            <ul>
-            <li><a href="#schedule">office hours</a></li>
-            <li><a href="#feedback">send feedback</a></li>
-        </ul>
-        </nav>
+    <ul>
+        <li>
+            <a href="#office-hours"
+               class="nav-link"
+               aria-current="location">
+                Office Hours
+            </a>
+        </li>
+
+        <li>
+            <a href="#feedback"
+               class="nav-link">
+                Send Feedback
+            </a>
+        </li>
+    </ul>
+</nav>
     </header>
     <main id="main">
-    <main id="main-content">
-    </main>
+  
+  <h2 id="schedule-heading">
+    Office Hours
+</h2>
 <table>
     <thead>
         <tr>
@@ -67,9 +83,9 @@
         ></circle>
     </svg>
 
-    <figcaption>
-        All office hours are held in Room 804.
-    </figcaption>
+<figcaption class="text-muted">
+    All office hours are held in Room 804.
+</figcaption>
 
 </figure>
 
@@ -95,15 +111,10 @@
 
     <form>
 
-        <!-- Name -->
-        <label for="name">Name:</label>
-        <input
-            type="text"
-            id="name"
-            name="name"
-            required
-        >
-
+       <p>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+</p>
         <br><br>
 
         <!-- Email -->
@@ -199,7 +210,7 @@
 
 </form>
 </svg>
-
+  </main>
     <footer>
       <address>
         Contact: <a href="mailto:syedahsanullah4@gmail.com">syedahsanullah4@gmail.com</a>
@@ -210,6 +221,4 @@
     <script type="module" src="script.js"></script>
 </body>
 </html>
-
-
 
