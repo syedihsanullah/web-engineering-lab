@@ -1,13 +1,11 @@
-function greet(name) {
+export function greet(name) {
   return `Hello, ${name}!`;
 }
 
-// Browser: set the heading text
 if (typeof document !== "undefined") {
-  document.getElementById("heading").textContent = greet("Sayed Ihsan");
-}
+  const heading = document.getElementById("greeting");
 
-// Node: export the function for testing
-if (typeof module !== "undefined") {
-  module.exports = { greet };
+  if (heading) {
+    heading.textContent = greet("ihsan");
+  }
 }
